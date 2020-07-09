@@ -307,7 +307,7 @@ export default {
     },
     focusOut: function focusOut() {
       if (this.isEmpty()) {
-        if (this.$refs.input.value) {
+        if (this.$refs.input) {
           this.$refs.input.value = '';
         }
         this.maskCore.setSelection({
